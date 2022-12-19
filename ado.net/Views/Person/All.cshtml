@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "All";
+    <head>
+        <link rel="stylesheet" href="~/Content/bootstrap-theme.css" type="text/css" />
+    </head>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Birth Date</th>
+        <th scope="col">Image</th>
+        <th scope="col">Country</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var person in @ViewBag.Result)
+    {
+        <tr scope="row">
+            <td>
+                @person.firstName
+            </td>
+
+            <td>
+                @person.lastName
+            </td>
+            <td>
+                @person.email
+            </td>
+            <td>@person.dateBirth</td>
+            <td>
+                @person.image
+            </td>
+            <td>
+                @person.country
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<form action="/Person/Search/getByFirstNameAndCountry" method="GET">
+    <label>First Name<input type="text" name="firstName" /></label>
+    <label>Country<input type="text" name="country"/></label>
+    <button type="submit">Submit</button>
+</form>
+

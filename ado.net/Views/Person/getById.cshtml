@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "getById";
+}
+@if (ViewBag.person == null) {
+    <h1>Cannot find person with the specified Id</h1>
+ } else {
+    <div class="alert-info row " >
+    <span class="col-lg-4">@ViewBag.person.firstName</span>
+    <span class="col-lg-4">@ViewBag.person.lastName</span>
+    <span class="col-lg-4">@ViewBag.person.dateBirth</span>
+    <span class="col-lg-6">@ViewBag.person.image</span>
+    <span class="col-lg-6">@ViewBag.person.country</span>
+    </div>
+    }
+
